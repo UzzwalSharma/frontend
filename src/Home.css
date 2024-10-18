@@ -1,0 +1,40 @@
+/* home.css */
+body {
+    background-color: #111; /* Dark background for better neon contrast */
+}
+
+.home-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.neon-text {
+    font-size: 3rem;
+    color: #39ff14; /* Neon green */
+    text-shadow: 
+        0 0 1px #39ff14, 
+        0 0 1px #39ff14, 
+        0 0 2px #39ff14,
+        0 0 30px #00ffcc, /* Extra glow */
+        0 0 40px #00ffcc;
+}
+
+.neon-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3c3c3c; /* Dark background for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14; /* Neon glow effect */
+}
+
+.neon-button:hover {
+    background-color: #3c3c3c; /* Keep the background on hover */
+    box-shadow: 0 0 10px #39ff14, 0 0 30px #39ff14; /* Increase glow on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}

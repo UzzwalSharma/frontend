@@ -1,17 +1,19 @@
-import { useState } from 'react'
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Chat from '/src/groupchat.jsx'; // Import your Chat component
+import Home from '/src/Home.jsx'; // You can create a Home component or use your existing one
+import './App.css'; // Your main app CSS
 
-// import './App.css'
-// import Signup from '/src/Signjup.jsx';
-import Chat from './groupchat';
+const App = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/chat" element={<Chat />} />
+            </Routes>
+        </Router>
+    );
+};
 
-function App() {
-  return (
-    <div>
-    <h1>Welcome to the IntelliCourse</h1>
-   
-    <Chat />
-    </div>
-  );
-}
-
-export default App
+export default App;
