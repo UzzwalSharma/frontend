@@ -6,7 +6,7 @@ import { FaMicrophone, FaRegSmile, FaRegThumbsUp, FaRegHeart, FaRegLaughBeam, Fa
 import toast, { Toaster } from 'react-hot-toast'; // Import react-hot-toast
 import './chat.css';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://backend-jovv.onrender.com');
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const Chat = () => {
