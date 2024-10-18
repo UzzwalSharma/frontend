@@ -1,0 +1,76 @@
+/* src/Chat.css */
+.chat-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #e3f2fd, #ffeb3b); /* Green to Yellow gradient */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px; /* Set a max width for better readability */
+  margin: auto; /* Center the chat container */
+}
+
+.chat-header {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px; /* Increase font size for better visibility */
+}
+
+.message-container {
+  height: 300px;
+  overflow-y: auto; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  &::-webkit-scrollbar {
+      display: none;
+  }
+
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px; /* Increased padding for better touch targets */
+  border-radius: 5px;
+  background-color: rgba(224, 224, 224, 0.7); /* Light background for messages */
+  color: #333;
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.message:hover {
+  background-color: rgba(255, 235, 59, 0.9); /* Highlight on hover */
+}
+
+.chat-form {
+  display: flex;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 16px; /* Increase font size for readability */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #388e3c; /* Dark green background */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.chat-button:hover {
+  background-color: #66bb6a; /* Lighter green on hover */
+}
